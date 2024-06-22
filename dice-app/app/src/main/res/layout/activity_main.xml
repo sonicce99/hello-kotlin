@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#008000"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="38sp"
+                android:text="인생은 주사위 한방에 가는거 아니겠습니까"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="28dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/diceStartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="인생 고고!"
+            android:layout_margin="50dp"
+            android:height="50dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            />
+    </LinearLayout>
+</layout>
