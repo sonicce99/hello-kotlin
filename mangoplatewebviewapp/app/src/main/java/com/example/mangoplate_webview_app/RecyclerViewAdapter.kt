@@ -30,6 +30,8 @@ class RecyclerViewAdapter(val List: MutableList<RVModel>): RecyclerView.Adapter<
             val rvText = itemView.findViewById<TextView>(R.id.rvTextArea);
 
             rvText.text = item.title;
+            // Glide 패키지 설치해야함.
+            // Glide.with(context).load(item.imageUrl).into(rvImage);
         }
 
     }
